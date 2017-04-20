@@ -1,22 +1,21 @@
-### Clone repo and run this command. 
 It downloads and installs all dependencies and builds the project:
 ```
 npm run build
 ```
 
-### Additional commands:
+#### Additional commands:
 
-#### Build project:
+Build project:
 ```
 gulp
 ```
 
-#### Lint project:
+Lint project:
 ```
 gulp lint
 ```
 
-#### Removes generated files and folders:
+Removes generated files and folders:
 ```
 npm run clean
 ```
