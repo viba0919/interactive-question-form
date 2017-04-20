@@ -1,0 +1,8 @@
+@mixin brand-line($height) {
+    &:before {
+        @include size(100% $height);
+        background: linear-gradient(to right, #f58322 0, #ffcb13 100%);
+        display: block;
+        content: '';
+    }
+}

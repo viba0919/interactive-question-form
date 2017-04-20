@@ -1,0 +1,18 @@
+.header {
+    @include clearfix;
+    @include padding($header-padding-top null null);
+    @include size(100% $header-height);
+    background-color: $header-background-color;
+    box-shadow: $header-bottom-shadow;
+    position: relative;
+    z-index: 1;
+
+    &__logo {
+        float: left;
+
+        img {
+            @include size(auto $header-logo-height);
+            display: block;
+        }
+    }
+}

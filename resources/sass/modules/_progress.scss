@@ -1,0 +1,11 @@
+.progress {
+    @include size(100% auto);
+    @include margin($gutter null null null);
+    background-color: $progress-background-color-bar;
+
+    &__filled {
+        height: $progress-height;
+        background-color: $progress-background-color;
+        transition: width $transition-duration * 1.5 $transition-timing-function;
+    }
+}

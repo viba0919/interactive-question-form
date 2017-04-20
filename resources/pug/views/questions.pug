@@ -1,0 +1,22 @@
+.layout__wrapper
+    .quiz-block.quiz-block--small(ng-controller="QuestionFormController as formCtrl", ng-init="formCtrl.init()")
+        form.form(name="formCtrl.qForm" novalidate)
+
+            h1.quiz-block__title {{ formCtrl.config.number }}. {{ formCtrl.currentQuestion.title }}
+
+            .form__message.form__message--error(ng-show="formCtrl.isErrorMessageVisible()") Pasirinkite vieną iš pateiktų atsakymų.
+
+            .quiz-block__content
+                label.quiz-block__answer.form__label(ng-repeat="answer in formCtrl.currentQuestion.answers")
+                    input.form__input-radio(
+                        type="radio"
+                        name="{{ formCtrl.currentQuestion.name }}"
+                        ng-value="{{ $index }}"
+                        ng-model="formCtrl.currentQuestion.result"
+                        ng-change="formCtrl.selectAnswer()"
+                        required)
+                    span {{ answer.value }}
+
+
+            include ../blocks/progress.pug
+            include ../blocks/navigation.pug

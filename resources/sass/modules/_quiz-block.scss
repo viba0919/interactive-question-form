@@ -1,0 +1,59 @@
+.quiz-block {
+    @include padding($quiz-block-padding-mobile-min);
+    @include margin(null auto);
+    box-shadow: $quiz-block-box-shadow;
+    background-color: $white;
+
+    &--small {
+        @media (min-width: $screen-tablet) {
+            @include padding($quiz-block-padding-tablet-min);
+            @include margin($gutter null);
+            max-width: 45em;
+        }
+
+        @media (min-width: $screen-desktop) {
+            max-width: 50em;
+        }
+    }
+
+    &__title {
+        @include margin(0 null);
+        line-height: 1.4;
+    }
+
+    &__content {
+        @include clearfix;
+        @include margin($gutter null null null);
+    }
+
+    &__answer {
+        display: block;
+        float: left;
+        clear: both;
+
+        &:not(:first-child) {
+            @include margin($gutter / 2 null null null);
+        }
+    }
+
+    &__result {
+        @include margin($gutter null null null);
+        position: relative;
+
+        &:before {
+            @extend .h-arrow-right;
+            @include position(absolute, $arrow-right-size null null $arrow-right-size * -1.8);
+            display: block;
+            content: '';
+
+            @media (min-width: $screen-tablet) {
+                left: $arrow-right-size * -2.5;
+            }
+        }
+
+        p {
+            @include margin($gutter / 2 null null null);
+        }
+    }
+}
+

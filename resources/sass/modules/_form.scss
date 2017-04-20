@@ -1,0 +1,61 @@
+.form {
+    &__label {
+        cursor: pointer;
+    }
+
+    &__message {
+        @include margin($gutter / 1.5 null null null);
+
+        &--error {
+            color: $form-message-error-color;
+        }
+    }
+
+    &__input-radio {
+        display: none;
+
+        + span {
+            @include padding(null null null $gutter);
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                &:after {
+                    border-width: $form-radio-border-width-checked;
+                    background-color: $light-grey;
+                }
+            }
+
+            &:before,
+            &:after {
+                @extend .h-round;
+                @include position(absolute, $form-radio-top null null 0);
+                @include size($form-radio-size);
+                border: $form-radio-border-width solid transparent;
+                background-clip: content-box;
+                box-sizing: border-box;
+                transition: border-color $transition-duration $transition-timing-function;
+                content: '';
+            }
+
+            &:before {
+                display: inline-block;
+                border-color: $light-grey;
+                background-color: $white;
+            }
+        }
+
+        &:checked {
+            + span {
+                &:before {
+                    border-color: $color-primary;
+                }
+
+                &:after {
+                    border-width: $form-radio-border-width-checked;
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}

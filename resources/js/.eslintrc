@@ -1,0 +1,8 @@
+{
+  "globals": {
+    "angular": true
+  },
+  "env": {
+    "browser": true
+  }
+}

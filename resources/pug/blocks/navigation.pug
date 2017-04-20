@@ -1,0 +1,20 @@
+.btn-group.btn-group--right
+    button.btn.btn--link(
+        type="button"
+        ng-show="formCtrl.isPrevButtonVisible()"
+        ng-click="formCtrl.prev()"
+    ) Atgal
+
+    button.btn.btn--secondary(
+        type="button"
+        ng-show="formCtrl.isNextButtonVisible()"
+        ng-disabled="formCtrl.qForm.$invalid"
+        ng-click="formCtrl.next()"
+    ) Toliau
+
+    button.btn.btn--primary(
+        type="button",
+        ng-show="formCtrl.isShowOverviewButtonVisible()"
+        ng-disabled="formCtrl.qForm.$invalid"
+        ng-click="viewCtrl.showResult()"
+    ) Baigti apklausą

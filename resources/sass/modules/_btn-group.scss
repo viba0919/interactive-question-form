@@ -1,0 +1,12 @@
+.btn-group {
+    @include clearfix;
+    @include margin($gutter - $gutter / 3.5 null null null);
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}

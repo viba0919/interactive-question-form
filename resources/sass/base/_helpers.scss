@@ -1,0 +1,15 @@
+.h-round {
+    border-radius: 50%;
+}
+
+.h-vertical-center {
+    @include position(absolute, 50% null null null);
+    transform: translateY(-50%);
+}
+
+.h-arrow-right {
+    @include size(0);
+    border-top: $arrow-right-size solid transparent;
+    border-bottom: $arrow-right-size solid transparent;
+    border-left: $arrow-right-size solid $color-secondary;
+}

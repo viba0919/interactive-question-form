@@ -1,0 +1,10 @@
+.footer {
+    @include size(100% $footer-height);
+    @include brand-line($footer-brand-line-height);
+    background-color: $footer-background-color;
+
+    &__content {
+        font-size: $footer-content-font-size;
+        text-align: center;
+    }
+}

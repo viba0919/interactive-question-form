@@ -1,0 +1,13 @@
+.layout {
+    @include padding($gutter null);
+    min-height: $layout-min-height;
+
+    &__wrapper {
+        @include clearfix;
+        @include margin(null auto);
+        @include padding(null $gutter / 1.4);
+        @include size(100% auto);
+        max-width: $layout-max-width;
+        position: relative;
+    }
+}

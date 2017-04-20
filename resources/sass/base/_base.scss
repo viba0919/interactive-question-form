@@ -1,0 +1,61 @@
+html,
+body {
+    @include size(100%);
+}
+
+html {
+    font-size: 14px;
+
+    @media (min-width: $screen-tablet) {
+        font-size: 16px;
+    }
+}
+
+body {
+    @include brand-line($body-brand-line-height / 2);
+    @include margin(0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $color-text;
+    min-width: $body-min-width;
+    background-color: $body-background-color;
+
+    @media (min-width: $screen-tablet) {
+        @include brand-line($body-brand-line-height);
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    @include margin($gutter * 0.75 null 0 null);
+}
+
+a {
+    color: $color-link;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}

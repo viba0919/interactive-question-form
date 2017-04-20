@@ -1,0 +1,14 @@
+include ../base/vars
+include ../base/mixin
+
+doctype html
+html(lang="lt", ng-app="app")
+    head
+        include ./blocks/meta
+        title= pageTitle
+        include ./blocks/style
+    body(ng-cloak)
+        include ../blocks/header.pug
+        block content
+        include ../blocks/footer.pug
+        include ./blocks/script-bottom

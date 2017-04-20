@@ -1,0 +1,11 @@
+.layout__wrapper
+    .quiz-block.quiz-block--small
+        h1.quiz-block__title Apžvalga
+
+        .quiz-block__content
+            .quiz-block__result(ng-repeat="question in viewCtrl.questions")
+                h3 {{ question.title }}
+                p {{ question.answers[question.result].value }}
+
+        .btn-group.btn-group--center
+            button.btn.btn--primary(type="button", ng-click="viewCtrl.restart()") Iš naujo

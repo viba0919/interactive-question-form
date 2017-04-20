@@ -1,0 +1,114 @@
+$images: '../images/';
+$fonts:  '../fonts/';
+
+$darken: 7%;
+
+
+// --------------------------------------------------
+// Colors
+// --------------------------------------------------
+$color-primary: #ee7023;
+$color-secondary: #31a3ae;
+$color-link: #257886;
+$color-text: #222;
+$light-grey: #ebe7e2;
+$white: #fff;
+
+
+// --------------------------------------------------
+// Gutters
+// --------------------------------------------------
+$gutter: 2em;
+
+
+// --------------------------------------------------
+// Helpers
+// --------------------------------------------------
+$arrow-right-size: 0.4em;
+
+
+// --------------------------------------------------
+// Body
+// --------------------------------------------------
+$body-min-width: 320px;
+$body-brand-line-height: $gutter / 5;
+$body-background-color: #fafafa;
+
+
+// --------------------------------------------------
+// Breakpoints
+// --------------------------------------------------
+$screen-phone: 36px;
+$screen-tablet: 48em;
+$screen-desktop: 62em;
+
+
+// --------------------------------------------------
+// Transition
+// --------------------------------------------------
+$transition-duration: 0.3s;
+$transition-timing-function: ease-out;
+
+
+// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+$btn-padding-top: $gutter / 3;
+$btn-padding-side: $gutter / 1.5;
+$btn-border-radius: 3px;
+$btn-color: $white;
+$btn-font-size: 0.9em;
+$btn-disabled-opacity: 0.5;
+
+
+// --------------------------------------------------
+// Header
+// --------------------------------------------------
+$header-height: $gutter * 2;
+$header-background-color: $white;
+$header-bottom-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+$header-logo-height: $gutter;
+$header-padding-top: ($header-height - $header-logo-height) / 2;
+
+
+// --------------------------------------------------
+// Footer
+// --------------------------------------------------
+$footer-height: $gutter * 1.5;
+$footer-brand-line-height: $gutter / 10;
+$footer-background-color: $white;
+$footer-content-font-size: 0.75em;
+
+
+// --------------------------------------------------
+// Layout
+// --------------------------------------------------
+$layout-max-width: 1200px;
+$layout-min-height: calc(100% - #{($header-height + $footer-height + $body-brand-line-height)});
+
+
+// --------------------------------------------------
+// Form
+// --------------------------------------------------
+$form-radio-size: 1.25em;
+$form-radio-border-width: 0.15em;
+$form-radio-border-width-checked: 0.45em;
+$form-radio-top: 0.05em;
+$form-message-error-color: #e74041;
+
+
+// --------------------------------------------------
+// Quiz block
+// --------------------------------------------------
+$quiz-block-box-shadow: 0 0 10px 2px rgba(240, 240, 240, 0.5);
+
+$quiz-block-padding-mobile-min: $gutter / 1.4;
+$quiz-block-padding-tablet-min: 2em 3em;
+
+
+// --------------------------------------------------
+// Progress
+// --------------------------------------------------
+$progress-height: 5px;
+$progress-background-color: $color-secondary;
+$progress-background-color-bar: rgba($progress-background-color, 0.2);

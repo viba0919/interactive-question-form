@@ -1,0 +1,12 @@
+extends ./layout/layout.pug
+
+block variables
+    -var pageTitle = 'Swedbank'
+
+block content
+    main.layout
+        section(
+            ng-controller="ViewController as viewCtrl"
+            ng-init="viewCtrl.init()"
+            ng-include="viewCtrl.template"
+        )
