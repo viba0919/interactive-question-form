@@ -4,18 +4,8 @@ npm run build
 ```
 
 #### Additional commands:
-
-Build project:
 ```
-gulp
-```
-
-Lint project:
-```
-gulp lint
-```
-
-Removes generated files and folders:
-```
-npm run clean
+gulp - build assets
+gulp lint - lint javascript and scss code
+npm run clean - removes all downloaded and generated assets
 ```
