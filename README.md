@@ -1,4 +1,5 @@
-### Clone repo and run this command. It downloads and installs all dependencies and builds the project:
+### Clone repo and run this command. 
+It downloads and installs all dependencies and builds the project:
 ```
 npm run build
 ```
