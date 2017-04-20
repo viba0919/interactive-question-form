@@ -1,11 +1,29 @@
-It downloads and installs all dependencies and builds the project:
+## Install
 ```
-npm run build
+$ git clone https://github.com/lukeed/preact-starter vbakula-interactive-question-form
+$ cd vbakula-interactive-question-form
+$ npm run build
 ```
 
-#### Additional commands:
+
+## Development
+
+##### Build assets
 ```
-gulp - build assets
-gulp lint - lint javascript and scss code
-npm run clean - removes all downloaded and generated assets
+$ gulp
 ```
+Build assets
+
+
+##### Lint code
+```
+$ gulp lint
+```
+Lint javascript and scss code
+
+
+##### Clean
+```
+$ npm run clean
+```
+Remove all downloaded vendors and generated assets
