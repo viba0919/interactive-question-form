@@ -1,6 +1,6 @@
 ## Install
 ```
-$ git clone https://github.com/lukeed/preact-starter vbakula-interactive-question-form
+$ git clone https://github.com/viba0919/interactive-question-form.git vbakula-interactive-question-form
 $ cd vbakula-interactive-question-form
 $ npm run build
 ```
