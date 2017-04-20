@@ -8,21 +8,21 @@ $ npm run build
 
 ## Development
 
-#### Build assets
+### Build assets
 ```
 $ gulp
 ```
 Build assets
 
 
-#### Lint code
+### Lint code
 ```
 $ gulp lint
 ```
 Lint javascript and scss code
 
 
-#### Clean
+### Clean
 ```
 $ npm run clean
 ```
