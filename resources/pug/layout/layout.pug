@@ -1,5 +1,4 @@
 include ../base/vars
-include ../base/mixin
 
 doctype html
 html(lang="lt", ng-app="app")
@@ -9,6 +8,7 @@ html(lang="lt", ng-app="app")
         include ./blocks/style
     body(ng-cloak)
         include ../blocks/header.pug
-        block content
+        main.layout
+            block content
         include ../blocks/footer.pug
         include ./blocks/script-bottom
