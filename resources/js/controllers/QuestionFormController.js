@@ -73,6 +73,7 @@
                 saveStep();
 
                 if (formCtrl.currentQuestion.result !== null) {
+                    formCtrl.currentQuestion.triggered = true;
                     updateProgress();
                 }
             } else {
